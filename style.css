@@ -1,110 +1,104 @@
+:root{
+  font-size:62.5%
+}
+
 *{
-    font-family: Poppins, sans-serif;
-    color: #222;
+  font-family: Poppins, sans-serif;
+  color: #222;
 }
 
 body{
-    margin: 0px;
-    padding: 0px;
-    width: 100vw;
-    background-color: #fefefe;
+  margin: 0px;
+  padding: 0px;
+  width: 100vw;
+  background-color: #fefefe;
 }
 
 header{
-    padding-top: 56px;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin-bottom: 0px;
-    
+  padding-top: 5.6rem;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 0px;
+
 }
 
 #div-logo{
-    margin-left: 63px;
+  margin-left: 6.3rem;
 }
 
 #div-logo img{
-    width: 164px;
+  width: 16.4rem;
 }
 
 a{
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .menu-item{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    font-size: 20px;
-    width: 160px;
-    font-weight: 400;
-    height:45px;
-    border:solid 2px #0F9AB9;
-    border-radius: 15px;
-    margin-right: 63px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  font-size: 2.0rem;
+  width: 16.0rem;
+  font-weight: 400;
+  height:4.5rem;
+  border:solid 2px #0F9AB9;
+  border-radius: 1.5rem;
+  margin-right: 6.3rem;
 }
 .container{
-    height:100vh;
-    margin-left: 40px;
-    margin-right: 40px;
-    background-color: #fff ;
-    border-left: solid 5px #0F9AB9;
-    border-right: solid 5px #0F9AB9;
+  height:100vh;
+  margin-left: 4.0rem;
+  margin-right: 4.0rem;
+  background-color: #fff ;
+  border-left: solid 5px #0F9AB9;
+  border-right: solid 5px #0F9AB9;
 }
 
 main{
 }
 
 .descrição{
-    display:flex;
-    align-items: center;
-    margin: auto;
-    justify-content: space-around;
-    font-size: 18px;
-    line-height: 27px;
+  display:flex;
+  align-items: center;
+  margin: auto;
+  justify-content: space-around;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
 }
 
 .descrição img{
-    width: 700px;
+  width: 70.0rem;
 }
 
 .descrição ul{
-    margin: 0;
+  margin: 0;
 }
 
 ul{
-    list-style: none;
-    margin-left: 65px;
+  list-style: none;
+  margin-left: 6.5rem;
 }
 
 li{
-    margin-bottom: 27px;
+  margin-bottom: 2.7rem;
 }
 
 h1{
-    margin-top: 32px;
-    color: #0F9AB9;
-    font-size: 40px;
-    margin-left: 63px;
+  margin-top: 3.2rem;
+  color: #0F9AB9;
+  font-size: 4.0rem;
+  margin-left: 6.3rem;
 }
 
-
 .color-picker {
-    position: relative;
-  }
-  
-  .color-indicator {
-    display: inline-block;
-    width: 200px;
-    height: 200px;
-    background-color: #fff;
-    border-radius: 20px;
-    vertical-align: middle;
-  }
-  
-  #color-picker {
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: 40px;
-  }
+position: relative;
+}
+
+#color-picker {
+display: inline-block;
+vertical-align: middle;
+margin-left: 4.0rem;
+}

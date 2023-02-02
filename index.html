@@ -17,14 +17,14 @@
     <div class="container">
             <header>
                 <div id="div-logo">
-                <img src="/src/logo-casa-inteligente.png" alt="Logo positivo casa inteligente">
+                <img src="/src/img/logo-casa-inteligente.png" alt="Logo positivo casa inteligente">
             </div>
             <div id="div-item">
                 <a class="menu-item" href="#">SAIBA MAIS</a>
             </div>
         </header>
         <main>
-            <h1 class="colorText">Smart Lâmpada Wi-Fi RGB+</h1>
+            <h1 id="color-indicator" class="color-indicator">Smart Lâmpada Wi-Fi RGB+</h1>
             <div class="descrição">
                 <ul>
                     <li>Fácil instalação</li>
@@ -33,9 +33,10 @@
                     <li>Controle sua casa remotamente</li>
                     <li>Compatível com Alexa e Google Assistente</li>
                     <li>Ajuste e controle de temperatura de cor e intensidade + RGB</li>
-                    <input type="color" id="cor" class="colorPicker" value="#0F9AB9">                
+                    <div class="color-picker"></div>
+                    <div id="color-picker"></div>               
                 </ul>
-                <img src="./src/smart-lampada-rgb-removebg-preview.png" alt="Caixa amarela e azul da Lampada Smart RGB positivo com um exemplar ao lado">
+                <img src="./src/img/smart-lampada-rgb-removebg-preview.png" alt="Caixa amarela e azul da Lampada Smart RGB positivo com um exemplar ao lado">
             </div>
         </main>
     </div>
@@ -106,18 +107,39 @@
         </section>
     </footer>
     -->
+    <script src="https://unpkg.com/@jaames/iro@5.0.0/dist/iro.min.js"></script>
     <script>
-        const colorPicker = document.querySelector('.colorPicker');
-        const h1 = document.querySelector('.colorText');
-        const container = document.querySelector('.container');
+        // const colorPicker = document.querySelector('.colorPicker');
+        // const h1 = document.querySelector('.colorText');
+        // const container = document.querySelector('.container');
     
-        colorPicker.addEventListener('input', function() {
-          h1.style.color = colorPicker.value;
-        });
+        // colorPicker.addEventListener('input', function() {
+        //   h1.style.color = colorPicker.value;
+        // });
     
-        colorPicker.addEventListener('input', function() {
-          container.style.borderColor = colorPicker.value;
-        });
+        // colorPicker.addEventListener('input', function() {
+        //   container.style.borderColor = colorPicker.value;
+        // });
+
+    const container = document.querySelector('.container');
+    let colorIndicator = document.getElementById('color-indicator');
+    let colorPicker = new iro.ColorPicker("#color-picker", {
+      width: 200,
+      color: "#f00",
+      borderWidth: 1,
+      borderColor: "#fff",
+    });
+
+    colorPicker.on("color:change", function (color) {
+      colorIndicator.style.color = color.hexString;
+    });
+
+    colorPicker.on("color:change", function (color) {
+      container.style.borderColor = color.hexString;
+    });
+
+
+
       </script>
 </body>
 </html>
