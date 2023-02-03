@@ -8,25 +8,35 @@
 }
 ul, li, a{
     text-decoration: none;
-    list-decoration: none;
     list-style: none;
     color: #222;
 }
 
 body{
-    background-color: #fefefe;
+    background-color: #f0f0f0;
 }
+
 
 .container{
     height: 100%;
     background-color: #fff;
-    margin: 20%;
+    margin: 25vh;
     margin-top: 0;
-    border-left: 3px solid #0F9AB9;
-    border-right: 3px solid #0F9AB9;
+    margin-bottom:2%;
+    border-radius: 15px;
+    /* border-left: 3px solid #d2d2d2;
+    border-right: 3px solid #d2d2d2; */
+    //box-shadow: 0px 0px 5px #0F9AB9;
 }
 
+#principal{
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px #0F9AB9;
+}
+
+
 .container header{
+    margin-top: 2%;
     padding-top: 25px;
     padding-bottom: 5px;
     padding-left: 80px;
@@ -46,16 +56,19 @@ header img{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: #0F9AB9 solid 2px;
     border-radius: 30px;
     width: 150px;
     height: 50px;
+    border: none;
+    box-shadow: 0 0 5px #0F9AB9;
 }
 
 #div-header:hover{
     color: #FFF;
     background-color: #0F9AB9;
-    transition: linear 0.3s;
+    opacity: 0.6;
+    transition: ease 0.4s;
+    box-shadow: 0 0 5px #0e758c;
 }
 
 .imgDescription{
@@ -99,24 +112,27 @@ header img{
 
 /* Style the tab */
 .tab {
-  float: left;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
-  width: 30%;
-  height: 450px;
+    overflow: hidden;
+    border-radius: 15px 0px 0px 15px;
+    float: left;
+    //border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 30%;
+    height: 100%;
 }
 
 .tab button {
-  display: block;
-  background-color: inherit;
-  color: black;
-  padding: 22px 16px;
-  width: 100%;
-  border: none;
-  outline: none;
-  text-align: left;
-  cursor: pointer;
-  transition: 0.3s;
+    border-radius: 0px 0px 0px 0px;
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
 /* Change background color of buttons on hover */
@@ -131,10 +147,71 @@ header img{
 
 /* Style the tab content */
 .tabcontent {
-  float: left;
-  padding: 0px 12px;
-  border: 1px solid #ccc;
-  width: 70%;
-  border-left: none;
-  height: 450px;
+    display: flex;
+    border-radius: 0px 15px 15px 15px;
+    float: left;
+    padding: 0px 12px;
+    border: none;
+    width: 70%;
+    padding-top: 10%;
+    border-left: none;
+    height: 100%;
+}
+
+#tabela{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    background-color: #fff;
+    box-shadow: 0 0 5px #0e758c;
+    height:500px;
+    border-radius: 15px;
+}
+
+h3{
+    margin-top
+    margin-bottom:10px;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+  header {
+    text-align: left;
+    padding: 10px;
+  }
+
+  nav {
+    text-align: left;
+  }
+
+  nav ul {
+    display: block;
+  }
+
+  nav li {
+    display: block;
+    margin: 10px 0;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .lista-ponto{
+    font-size: 12px;
+  }
+
+  #color-indicator{
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .lista-ponto{
+    font-size: 10px;
+  }
+
+  #color-indicator{
+    font-size: 1.2em;
+  }
 }
