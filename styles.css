@@ -20,9 +20,8 @@ body{
 .container{
     height: 100%;
     background-color: #fff;
-    margin: 95px;
+    margin: 20%;
     margin-top: 0;
-    margin-bottom: 0;
     border-left: 3px solid #0F9AB9;
     border-right: 3px solid #0F9AB9;
 }
@@ -59,25 +58,32 @@ header img{
     transition: linear 0.3s;
 }
 
-h1{
-    margin-top: 20px;
-    font-size: 32px;
-    margin-bottom: 10px;
-    color: #0F9AB9;
-    margin-left: 35px;
+.imgDescription{
+  width: 100%;
+  height: 100%;
+  
 }
-
 .descrição{
-    height: 600px;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
     margin-left: 35px;
-    justify-content: space-between;
 }
 
 .descrição .lista{
     font-size: 16px;
-    width: 300px;
-    height: 300px;
+    width: auto;
+    height: auto;
+}
+
+.descrição .lista h1 {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 20px;
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #0F9AB9;
 }
 
 .descrição .lista .lista-ponto{
@@ -85,8 +91,8 @@ h1{
 }
 
 .descrição img{
-    width: 300px; 
-    height: 300px;
+    width: auto; 
+    height: auto;
 }
 
 * {box-sizing: border-box}

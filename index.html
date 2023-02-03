@@ -24,9 +24,9 @@
             </div>
         </header>
         <main>
-            <h1 id="color-indicator" class="color-indicator">Smart Lâmpada Wi-Fi RGB+</h1>
             <div class="descrição">
                 <div class="lista">
+                    <h1 id="color-indicator" class="color-indicator">Smart Lâmpada Wi-Fi RGB+</h1>
                     <p class="lista-ponto">Fácil instalação</p>
                     <p class="lista-ponto">Garantia de 12 meses.</p>
                     <p class="lista-ponto">Bivolt, com Potência de 12W</p>
@@ -36,7 +36,9 @@
                     <div class="color-picker"></div>
                     <div id="color-picker"></div>               
                 </div>
-                <img src="./src/img/smart-lampada.png" alt="Caixa amarela e azul da Lampada Smart RGB positivo com um exemplar ao lado">
+                <div>
+                  <img class="imgDescription" src="./src/img/smart-lampada.png" alt="Caixa amarela e azul da Lampada Smart RGB positivo com um exemplar ao lado">
+                </div>
             </div>
         </main>
         <section>
@@ -98,7 +100,7 @@
     let colorIndicator = document.getElementById('color-indicator');
     let colorPicker = new iro.ColorPicker("#color-picker", {
       width: 80,
-      color: "#f00",
+      color: "#0F9AB9",
       borderWidth: 0.5,
       borderColor: "#fff",
     });
@@ -110,9 +112,6 @@
     colorPicker.on("color:change", function (color) {
       container.style.borderColor = color.hexString;
     });
-
-
-
     </script>
 </body>
 </html>
