@@ -4,129 +4,102 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="/src/bx-bulb.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="/src/img/icon.png">
+    <link rel="stylesheet" href="styles.css">
     
     <title>Smart Lâmpada Wi-Fi RGB+</title>
 </head>
 <body>
     <div class="container">
-            <header>
-                <div id="div-logo">
-                <img src="/src/img/logo-casa-inteligente.png" alt="Logo positivo casa inteligente">
+        <header>
+            <div id="div-logo">
+                <img src="/src/img/logo.png" alt="Logo positivo casa inteligente">
             </div>
-            <div id="div-item">
-                <a class="menu-item" href="#">SAIBA MAIS</a>
+            <div >
+                <button id="div-header">SAIBA MAIS</button>
             </div>
         </header>
         <main>
             <h1 id="color-indicator" class="color-indicator">Smart Lâmpada Wi-Fi RGB+</h1>
             <div class="descrição">
-                <ul>
-                    <li>Fácil instalação</li>
-                    <li>Garantia de 12 meses.</li>
-                    <li>Bivolt, com Potência de 12W</li>
-                    <li>Controle sua casa remotamente</li>
-                    <li>Compatível com Alexa e Google Assistente</li>
-                    <li>Ajuste e controle de temperatura de cor e intensidade + RGB</li>
+                <div class="lista">
+                    <p class="lista-ponto">Fácil instalação</p>
+                    <p class="lista-ponto">Garantia de 12 meses.</p>
+                    <p class="lista-ponto">Bivolt, com Potência de 12W</p>
+                    <p class="lista-ponto">Controle sua casa remotamente</p>
+                    <p class="lista-ponto">Compatível com Alexa e Google Assistente</p>
+                    <p class="lista-ponto">Ajuste e controle de temperatura de cor e intensidade + RGB</p>
                     <div class="color-picker"></div>
                     <div id="color-picker"></div>               
-                </ul>
-                <img src="./src/img/smart-lampada-rgb-removebg-preview.png" alt="Caixa amarela e azul da Lampada Smart RGB positivo com um exemplar ao lado">
+                </div>
+                <img src="./src/img/smart-lampada.png" alt="Caixa amarela e azul da Lampada Smart RGB positivo com um exemplar ao lado">
             </div>
         </main>
-    </div>
-    <div class="container">
-        
-    </div>
-<!---
-    <section class="differentials">
-        <h3>Diferenciais</h3>
-        <div>
-        <div class="difs">Consumo menor de energia quando comparado as lâmpadas convencionais.</div>
-        <div class="difs">Cores mais intensas e vibrantes.</div>
-        <div class="difs">Fluxo luminoso de 1.000Lm.</div>
-        <div class="difs">Pode ser controlado a distância, por meio do app, ou por comando de voz.</div>
-        <div class="difs">Mais potência com menos consumo.</div>
-        <div class="difs">Ilumina, de verdade, qualquer ambiente.</div>
-        </div>
-    </section>
-
-    <section class="specifications">
-        <h3>Especificações técnicas</h3>
-        <p>- Tensão de entrada: 100 ~240 VCA, 50/60Hz<br>
-        - Potência: 12W,>0,5W standby<br>
-        - Fluxo luminoso: 1000 lm<br>
-        - Temperatura de cor: 2700k a 6500K + RGB<br>
-        - CRI (Color Rendering Index): >80<br>
-        - Fator de potência: >0.5<br>
-        - Conector: E27<br>
-        - Vida útil: >15000h<br>
-        - Conexão: Wi-Fi IEEE 802.11 b/g/n, 2.4GHz><br>
-        - Segurança e criptografia WPA/WPA2, WEP/TKIP/AES<br>
-        - Certificações: Anatel, RoHS<br>
-        - Dimensões 70 x 70 x 128 mm<br>
-        - Cor: Cor Branca<br>
-        - Peso: Peso Líquido 73 g ><br>
-        </p>
-    </section>
-    <footer>
-        <section class="dev-contact">
-            <h4>Contatos da dev</h4>
-            <div class="contact" id="email">
-                <i class='bx bx-envelope'></i>
-                <a href="#">luaspecht@gmail.com</a>
-            </div>
-            <div class="contact" id="linkedin">
-                <i class='bx bxl-linkedin'></i>
-                <a href="https://www.linkedin.com/in/luana-specht-bragante-3a198b115/">Luana Specht Bragante</a>
-            </div>
-            <div class="contact" id="gitHub">
-                <i class='bx bxl-github'></i>
-                <a href="https://github.com/LuaSpecht/LuaSpecht">Lua Specht</a>
-            </div>
+        <section>
+            <div class="tab">
+                <button id="defaultOpen" class="tablinks" onclick="openCity(event, 'London')">Diferenciais</button>
+                <button class="tablinks" onclick="openCity(event, 'Paris')">Especificações</button>
+              </div>
+              
+              <div id="London" class="tabcontent">
+                <ul><h3>Diferenciais</h3><br>
+                    <li class="dif-lista">-Fluxo luminoso de 1.000Lm.</li><br>
+                    <li class="dif-lista">-Cores mais intensas e vibrantes.</li><br>
+                    <li class="dif-lista">-Consumo menor de energia quando comparado as lâmpadas convencionais.</li><br>
+                    <li class="dif-lista">-Pode ser controlado a distância, por meio do app, ou por - comando de voz.</li><br>
+                    <li class="dif-lista">-Mais potência com menos consumo. Ilumina, de verdade, qualquer ambiente.</li><br>
+                </ul>
+              </div>
+              
+              <div id="Paris" class="tabcontent">
+                <ul><h3>Especificações Técnicas</h3><br>
+                    <li class="dif-lista">-Tensão de entrada: 100 ~240 VCA, 50/60Hz</li>
+                    <li class="dif-lista">-Potência: 12W,>0,5W standby</li>
+                    <li class="dif-lista">-Fluxo luminoso: 1000 lm</li>
+                    <li class="dif-lista">-Temperatura de cor: 2700k a 6500K + RGB</li>
+                    <li class="dif-lista">-CRI (Color Rendering Index): >80</li>
+                    <li class="dif-lista">-Fator de potência: >0.5</li>
+                    <li class="dif-lista">-Conector: E27</li>
+                    <li class="dif-lista">-Vida útil: >15000h</li>
+                    <li class="dif-lista">-Conexão: Wi-Fi IEEE 802.11 b/g/n, 2.4GHz></li>
+                    <li class="dif-lista">-Segurança e criptografia WPA/WPA2, WEP/TKIP/AES</li>
+                    <li class="dif-lista">-Certificações: Anatel, RoHS</li>
+                    <li class="dif-lista">-Dimensões 70 x 70 x 128 mm</li>
+                    <li class="dif-lista">-Cor: Cor Branca</li>
+                    <li class="dif-lista">-Peso: Peso Líquido 73 g</li>
+                </ul>
+              </div>
         </section>
-        <section class="owner-contact">
-            <h4>Contatos Positivo</h4>
-            <div class="contact" id="site">
-                <i class='bx bx-link'></i>
-                <a href="#">Site original</a>
-            </div>
-            <div class="contact" id="store">
-                <i class='bx bx-store'></i>
-                <a href="#">Site para compra</a>
-            </div>
-            <div class="contact" id="phone">
-                <i class='bx bx-phone'></i>
-                <a href="#">Telefone para contato: (**)****-****</a>
-            </div>
-        </section>
-    </footer>
-    -->
+    </div>
+    <script>
+        function openCity(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+    
+        document.getElementById("defaultOpen").click();
+    </script>
     <script src="https://unpkg.com/@jaames/iro@5.0.0/dist/iro.min.js"></script>
     <script>
-        // const colorPicker = document.querySelector('.colorPicker');
-        // const h1 = document.querySelector('.colorText');
-        // const container = document.querySelector('.container');
-    
-        // colorPicker.addEventListener('input', function() {
-        //   h1.style.color = colorPicker.value;
-        // });
-    
-        // colorPicker.addEventListener('input', function() {
-        //   container.style.borderColor = colorPicker.value;
-        // });
-
     const container = document.querySelector('.container');
     let colorIndicator = document.getElementById('color-indicator');
     let colorPicker = new iro.ColorPicker("#color-picker", {
-      width: 200,
+      width: 80,
       color: "#f00",
-      borderWidth: 1,
+      borderWidth: 0.5,
       borderColor: "#fff",
     });
 
@@ -140,6 +113,6 @@
 
 
 
-      </script>
+    </script>
 </body>
 </html>

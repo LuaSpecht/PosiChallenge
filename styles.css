@@ -1,0 +1,134 @@
+*{
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+    color: #222;
+    margin: 0;
+    padding: 0;
+
+}
+ul, li, a{
+    text-decoration: none;
+    list-decoration: none;
+    list-style: none;
+    color: #222;
+}
+
+body{
+    background-color: #fefefe;
+}
+
+.container{
+    height: 100%;
+    background-color: #fff;
+    margin: 95px;
+    margin-top: 0;
+    margin-bottom: 0;
+    border-left: 3px solid #0F9AB9;
+    border-right: 3px solid #0F9AB9;
+}
+
+.container header{
+    padding-top: 25px;
+    padding-bottom: 5px;
+    padding-left: 80px;
+    padding-right: 80px;
+    display: flex;
+    justify-content: space-between;
+    height: 45px;
+}
+
+header img{
+    width: 160px;
+    height: 35px;
+}
+
+#div-header {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: #0F9AB9 solid 2px;
+    border-radius: 30px;
+    width: 150px;
+    height: 50px;
+}
+
+#div-header:hover{
+    color: #FFF;
+    background-color: #0F9AB9;
+    transition: linear 0.3s;
+}
+
+h1{
+    margin-top: 20px;
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #0F9AB9;
+    margin-left: 35px;
+}
+
+.descrição{
+    height: 600px;
+    display: flex;
+    margin-left: 35px;
+    justify-content: space-between;
+}
+
+.descrição .lista{
+    font-size: 16px;
+    width: 300px;
+    height: 300px;
+}
+
+.descrição .lista .lista-ponto{
+    margin-bottom: 25px;
+}
+
+.descrição img{
+    width: 300px; 
+    height: 300px;
+}
+
+* {box-sizing: border-box}
+
+/* Style the tab */
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 30%;
+  height: 450px;
+}
+
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 70%;
+  border-left: none;
+  height: 450px;
+}
