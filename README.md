@@ -2,7 +2,7 @@
 
 ![preview](./.github/preview.jpeg)
 
->Desafio Positivo
+>Link de acesso: https://luaspecht.github.io/PosiChallenge/
 
 Projeto construído para a avaliação técnica da Positivo Tecnologia
 
